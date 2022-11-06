@@ -14,6 +14,7 @@ body{
 .container{
   width: 60vw;
   height: 70vh;
+  min-width: 1000px;
   background-color: #fff;
   border-radius: 5px;
 }
@@ -25,10 +26,24 @@ body{
 .player1,.player2{
   height: 100%;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+.total_txt,.current_txt,.player_heading{
+  font-size: 40px;
+  color: #fff;
+}
+.total_score,.current_score{
+  font-size: 100px;
+  color: #fff;
 }
 .player1{
-  background-color: aqua;
+  background-color: rgb(243, 119, 119);
 }
 .player2{
-  background-color: aquamarine;
+  background-color: rgb(119, 64, 64);
 }
